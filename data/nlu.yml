@@ -1,0 +1,188 @@
+
+# ************************ ChatGPT***************
+
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: general_knowledge
+  examples: |
+    - What is the capital of France?
+    - How tall is the Eiffel Tower?
+    - Who won the Nobel Prize in Literature this year?
+
+- intent: recommendation
+  examples: |
+    - Can you suggest a good restaurant in London?
+    - Which movie should I watch this weekend?
+    - Any book recommendations for science fiction lovers?
+
+- intent: advice
+  examples: |
+    - What should I do if I'm feeling stressed?
+    - Can you give me some career advice?
+    - What's your opinion on the best smartphone?
+
+- intent: fun
+  examples: |
+    - Can you tell me a joke?
+    - Write a poem about nature.
+    - Can you generate a random story?
+
+- intent: facts_trivia
+  examples: |
+    - Tell me an interesting fact about dolphins.
+    - What is the largest planet in our solar system?
+    - Who is the author of "Pride and Prejudice"?
+
+- intent: translation
+  examples: |
+    - How do you say "hello" in Spanish?
+    - Can you translate "thank you" to French?
+    - What does this phrase mean in German?
+
+- intent: Problem-solving
+  examples: |
+    - Help me solve this math equation: 2x + 5 = 15.
+    - How can I convert Celsius to Fahrenheit?
+    - What are the steps to bake a chocolate cake?
+    - sample program?
+    - write a sample code
+    - print ?
+
+- intent: Weather
+  examples: |
+    - What's the weather like in New York today?
+    - Will it rain in London tomorrow?
+    - Give me the forecast for the weekend in Paris.
+    - time 
+
+- intent: updates
+  examples: |
+    - What are the latest headlines in technology news?
+    - Tell me about the recent developments in space exploration.
+    - Any updates on the COVID-19 pandemic?
+    - different
+    - handling
+
+- intent: ask_id
+  examples: |
+    - my session id
+    - mine conversation id
+    - my user id
+
+# - intent: continue_conversation
+#   examples: |
+#     - Continue Conversation
+#     - I have some information about X
+#     - but I would like to know more about it
+#     - Could you elaborate more on the benefits of X
+#     - Can you provide more details about the features of X
+#     - more
+#     - go ahead and explain further
+
+- intent: image_capturing
+  examples: |
+    - image
+    - picture
+    - photo
+
+- intent: image_
+  examples: |
+    - https://www.ebuyer.com/blog/wp-content/uploads/2015/11/cloud_diagram.jpg(image_url)
+    - https://www.tutorialspoint.com/amazon_web_services/images/architecture.jpg(image_url)
+
+# - intent: image_urls
+#   examples: |
+#     - please provide a AWS image?
+#     - provide sample image of cat?
+#     - image of dog?

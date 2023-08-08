@@ -1,0 +1,75 @@
+
+# ***************** ChatGPT*********************
+
+
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: call chatgpt and show answer
+  steps:
+  - intent: general_knowledge
+  - action: open_ai_gpt
+  - intent: recommendation
+  - action: open_ai_gpt
+  - intent: advice
+  - action: open_ai_gpt
+  - intent: fun
+  - action: open_ai_gpt
+  - intent: facts_trivia
+  - action: open_ai_gpt
+  - intent: translation
+  - action: open_ai_gpt
+  - intent: Problem-solving
+  - action: open_ai_gpt
+  - intent: Weather
+  - action: open_ai_gpt
+  - intent: updates
+  - action: open_ai_gpt
+  # - intent: continue_conversation
+  # - action: open_ai_gpt
+
+- story: call conversation id
+  steps:
+  - intent: ask_id
+  - action: action_session_id
+
+- story: call_image
+  steps:
+  - intent: image_capturing
+  - action: utter_image
+  - intent: image_
+  - action: action_image_capture
+
+# - story: response_image_urls
+#   steps:
+#   - intent: image_urls
+#   - action: action_image_url
+
